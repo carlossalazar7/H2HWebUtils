@@ -1,0 +1,40 @@
+<pagosMasivos>
+    <GLOBAL_ID>1234567</GLOBAL_ID>
+    <CUSTOMER_ID>00775566</CUSTOMER_ID>
+    <USERNAME>test</USERNAME>
+    <BATCHES>
+        <!--1 or more repetitions:-->
+        <BATCH>
+            <CUSTOMER_BATCH_ID>201708081048</CUSTOMER_BATCH_ID>
+            <!--Optional:-->
+            <TYPE>1</TYPE>
+            <!--Optional:-->
+            <DATA_STRUCTURE>
+                <VALIDATIONS>
+                    <DEBIT_ACCT_BALANCE>NO</DEBIT_ACCT_BALANCE>
+                    <DEBIT_ACCT_STATUS>NO</DEBIT_ACCT_STATUS>
+                    <NUMBER_OF_TRANSACTIONS>2</NUMBER_OF_TRANSACTIONS>
+                    <TOTAL_AMOUNT>300</TOTAL_AMOUNT>
+                </VALIDATIONS>
+                <FIELDS>
+                    <!--1 or more repetitions:-->
+                    <FIELD>ID</FIELD>
+                    <FIELD>PAYMENT_TYPE</FIELD>
+                    <FIELD>DEBIT_ACCOUNT</FIELD>
+                    <FIELD>AMOUNT</FIELD>
+                    <FIELD>CREDIT_ACCOUNT</FIELD>
+                    <FIELD>CREDIT_ACCOUNT_TYPE</FIELD>
+                    <FIELD>DESTINATION_BANK</FIELD>
+                    <FIELD>BENEFICIARY_NAME</FIELD>
+                    <FIELD>DESCRIPTION</FIELD>
+                </FIELDS>
+                <DELIMITER>|</DELIMITER>
+            </DATA_STRUCTURE>
+            <TRANSACTIONS>
+                <!--1 or more repetitions:-->
+                <TRANSACTION>1|1|001102000000050852|100|214130008713|CA|7|ELMER NOE LOPEZ ORELLANA|PAGO PROVEEDOR PRUEBAS </TRANSACTION>
+                <TRANSACTION>2|1|001102000000050852|200|222010848383|CA|7|JORGE LUIS GARCIA REYES|PAGO A PROVEEDOR PRUEBAS</TRANSACTION>
+            </TRANSACTIONS>
+        </BATCH>
+    </BATCHES>
+</pagosMasivos>

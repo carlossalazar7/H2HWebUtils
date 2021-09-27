@@ -1,0 +1,41 @@
+<pag:pagosMasivos>
+    <GLOBAL_ID>1234567</GLOBAL_ID>
+    <CUSTOMER_ID>05242184</CUSTOMER_ID>
+    <USERNAME>test</USERNAME>
+    <BATCHES>
+        <!--1 or more repetitions:-->
+        <BATCH>
+            <CUSTOMER_BATCH_ID>201905281116</CUSTOMER_BATCH_ID>
+            <!--Optional:-->
+            <TYPE>23</TYPE>
+            <!--Optional:-->
+            <DATA_STRUCTURE>
+                <VALIDATIONS>
+                    <DEBIT_ACCT_BALANCE>NO</DEBIT_ACCT_BALANCE>
+                    <DEBIT_ACCT_STATUS>NO</DEBIT_ACCT_STATUS>
+                    <NUMBER_OF_TRANSACTIONS>4</NUMBER_OF_TRANSACTIONS>
+                    <TOTAL_AMOUNT>1000</TOTAL_AMOUNT>
+                </VALIDATIONS>
+                <FIELDS>
+                    <!--1 or more repetitions:-->
+                    <FIELD>ID</FIELD>
+                    <FIELD>PAYMENT_TYPE</FIELD>
+                    <FIELD>DEBIT_ACCOUNT</FIELD>
+                    <FIELD>AMOUNT</FIELD>
+                    <FIELD>CREDIT_ACCOUNT</FIELD>
+                    <FIELD>CREDIT_ACCOUNT_TYPE</FIELD>
+                    <FIELD>BENEFICIARY_NAME</FIELD>
+                    <FIELD>DESCRIPTION</FIELD>
+                </FIELDS>
+                <DELIMITER>|</DELIMITER>
+            </DATA_STRUCTURE>
+            <TRANSACTIONS>
+                <!--1 or more repetitions:-->
+                <TRANSACTION>1|1|021101000000551248|100|000000000008493502|CC|JOSE MANUEL FERRERA VARELA|000000000025587-10-20150600</TRANSACTION>
+                <TRANSACTION>2|1|021101000000551248|200|000000000008493502|CC|JOSE LUIS GARCIA REYES|000000000025587-12-20150600</TRANSACTION>
+                <TRANSACTION>3|1|021101000000551248|300|000000000008493502|CC|JUAN BRYAN MAYORQUIN PEREZ|000000000034037-10-20150600</TRANSACTION>
+                <TRANSACTION>4|1|021101000000551248|400|000000000008493502|CC|CARLOS HUMBERTO BARRIENTOS CARRANZA|000000000038054-10-20150600</TRANSACTION>
+            </TRANSACTIONS>
+        </BATCH>
+    </BATCHES>
+</pag:pagosMasivos>
