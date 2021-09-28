@@ -1,0 +1,12 @@
+
+<RequestHeader>
+    <Authentication>
+        <UserName>USUARIO</UserName>
+        <Password>PASSWORD</Password>
+    </Authentication>
+    <Region>
+        <SourceBank>HN01</SourceBank>
+        <!--Optional:-->
+        <DestinationBank>HN01</DestinationBank>
+    </Region>
+</RequestHeader>

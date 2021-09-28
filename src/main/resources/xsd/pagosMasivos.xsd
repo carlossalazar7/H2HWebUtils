@@ -1,0 +1,56 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="pagosMasivos">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element type="xsd:integer" name="GLOBAL_ID"/>
+                <xsd:element type="xsd:integer" name="CUSTOMER_ID"/>
+                <xsd:element type="xsd:string" name="USERNAME"/>
+                <xsd:element name="BATCHES">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="BATCH">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element type="xsd:integer" name="CUSTOMER_BATCH_ID"/>
+                                        <xsd:element type="xsd:integer" name="TYPE"/>
+                                        <xsd:element name="DATA_STRUCTURE">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="VALIDATIONS">
+                                                        <xsd:complexType>
+                                                            <xsd:sequence>
+                                                                <xsd:element type="xsd:string" name="DEBIT_ACCT_BALANCE"/>
+                                                                <xsd:element type="xsd:string" name="DEBIT_ACCT_STATUS"/>
+                                                                <xsd:element type="xsd:integer" name="NUMBER_OF_TRANSACTIONS"/>
+                                                                <xsd:element type="xsd:integer" name="TOTAL_AMOUNT"/>
+                                                            </xsd:sequence>
+                                                        </xsd:complexType>
+                                                    </xsd:element>
+                                                    <xsd:element name="FIELDS">
+                                                        <xsd:complexType>
+                                                            <xsd:sequence>
+                                                                <xsd:element maxOccurs="unbounded" type="xsd:string" name="FIELD"/>
+                                                            </xsd:sequence>
+                                                        </xsd:complexType>
+                                                    </xsd:element>
+                                                    <xsd:element type="xsd:string" name="DELIMITER"/>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                        <xsd:element name="TRANSACTIONS">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element maxOccurs="unbounded" type="xsd:string" name="TRANSACTION"/>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

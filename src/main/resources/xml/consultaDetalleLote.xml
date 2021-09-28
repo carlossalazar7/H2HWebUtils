@@ -1,0 +1,12 @@
+ <consultaDetalleLote>
+         <CUSTOMER_ID>9999999</CUSTOMER_ID>
+         <QUERY_TYPE>BANK_BATCH_ID</QUERY_TYPE>
+         <QUERY_VALUE>1751139</QUERY_VALUE>
+         <PAGING_INFO>
+            <PAGING>YES</PAGING>
+            <!--Optional:-->
+            <INITIAL_RECORD>1</INITIAL_RECORD>
+            <!--Optional:-->
+            <RECORD_COUNT>50</RECORD_COUNT>
+         </PAGING_INFO>
+      </consultaDetalleLote>
