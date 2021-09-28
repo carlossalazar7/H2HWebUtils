@@ -1,0 +1,20 @@
+ <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="consultaDetalleLote">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element type="xsd:integer" name="CUSTOMER_ID"/>
+                <xsd:element type="xsd:string" name="QUERY_TYPE"/>
+                <xsd:element type="xsd:integer" name="QUERY_VALUE"/>
+                <xsd:element name="PAGING_INFO">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element type="xsd:string" name="PAGING"/>
+                            <xsd:element type="xsd:integer" name="INITIAL_RECORD"/>
+                            <xsd:element type="xsd:integer" name="RECORD_COUNT"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

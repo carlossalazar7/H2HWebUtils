@@ -1,0 +1,25 @@
+ <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="pagosMasivosResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element type="xsd:integer" name="GLOBAL_ID"/>
+                <xsd:element type="xsd:integer" name="CUSTOMER_ID"/>
+                <xsd:element name="BATCHES">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="BATCH">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element type="xsd:integer" name="BANK_BATCH_ID"/>
+                                        <xsd:element type="xsd:integer" name="CUSTOMER_BATCH_ID"/>
+                                        <xsd:element type="xsd:string" name="STATUS"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
